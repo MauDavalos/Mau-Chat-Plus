@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Login Register</title>
+ <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+ <link rel="stylesheet" 
+ href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+ <style>
+  html{
+   padding:50px;
+  }
+ </style>
+
+
+
+<meta charset="utf-8">
+<title>WebScockets 101</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+<link href="/styles.css" rel="stylesheet" />
+
+
+</head>
+<body>
+ <div class="container">
+  <div class="page-header text-center">
+   <h1>My Profile</h1>
+   <a href="/logout" class="btn btn-danger btn-sm">Logout</a>
+  </div>
+
+  <div class="row">
+   <div class="col-sm-12">
+    <div class="well">
+     <h3><span class="fa fa-user"></span> Welcome <%= user.username %></h3>
+
+     <p>
+      <strong>id</strong> <%= user.id %> <br>
+      <strong>username</strong> <%= user.username %> <br>
+     </p>
+    </div>
+   </div>
+  </div>
+ </div>
+</body>
+
+
+<div id="mario-chat">
+    <h2>Mau Chat Plus+</h2>
+    <div id="chat-window">
+        <div id="output"></div>
+        <div id="feedback"></div>
+    </div>
+  
+    <input id="handle" type="text" placeholder="Handle" value=<%= user.username %>>
+    <input id="message" type="text" placeholder="Message" />
+    <button id="send">Send</button>
+
+    <div id="notificacion"></div>
+</div>
+
+
+</body>
+<script src="chat.js"></script>
+</html>
